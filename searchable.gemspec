@@ -7,6 +7,12 @@ Gem::Specification.new do |s|
   s.authors     = ["Nikolay Rozhkov"]
   s.email       = 'nrozhkov@at-consulting.ru'
   s.files       = ["lib/searchable.rb"]
+  s.files       = Dir["{app,config,db,lib}/**/*", "README.md"]
   s.homepage    = 'http://github.com/nirname/searchable'
   s.license     = 'MIT'
+
+  s.add_dependency "rails", "~> 3.2"
+  s.add_dependency "elasticsearch-model"
+  s.add_dependency "elasticsearch-rails"
+
 end
